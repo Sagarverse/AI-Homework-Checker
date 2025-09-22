@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: "Helvetica Neue", sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #34495e;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            background-color: #ecf0f1;
+            color: #3498db;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .center {
+            text-align: center;
+            border-radius: 100px;
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .profile {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile img {
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        .profile h1 {
+            color: #3498db;
+            margin-top: 10px;
+        }
+
+        .profile p {
+            font-size: 18px;
+            color: #7f8c8d;
+        }
+
+        .profile strong {
+            color: #3498db;
+        }
+
+        .skills img {
+            width: 80px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Homework Checker</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="image">Upload an Image:</label>
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Check Homework</button>
+    </form>
+
+    <div class="profile">
+        <h1 class="center">Welcome!</h1>
+        <img src="https://yt3.googleusercontent.com/3K14gqb_8enUZbWz-mRn99C_48wLYNI58KHQWshq2DECNnOv9ZjndDYRmoDp9xYwVnRsqcaOzUQ=s100-c-k-c0x00ffffff-no-rj" alt="Profile Image">
+        <h1>SAGAR M</h1>
+        <p class="role">STUDENT</p>
+    </div>
+</body>
+</html>
